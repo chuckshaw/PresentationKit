@@ -18,6 +18,7 @@ public:
 signals:
     
 public slots:
+    void Slot_ExitApplication();
 
 private:
     void Ignition();

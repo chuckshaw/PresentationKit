@@ -35,3 +35,24 @@ void PresentationKit::Ignition()
 {
     _PKMainWindow = new PKMainWindow(this, Qt::Window);
 }
+
+void PresentationKit::Slot_ExitApplication()
+{
+    QMessageBox msgBox;
+    msgBox.setText("Are you sure you want to exit the application?");
+    msgBox.setStandardButtons(QMessageBox::Cancel | QMessageBox::Ok);
+    msgBox.setDefaultButton(QMessageBox::Ok);
+
+    switch (msgBox.exec())
+    {
+        case QMessageBox::Ok:
+            QApplication::closeAllWindows();
+            break;
+        case QMessageBox::Cancel:
+            return;
+            break;
+        default:
+            // should never be reached
+            break;
+    }
+}

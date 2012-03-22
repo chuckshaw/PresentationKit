@@ -2,6 +2,7 @@
 #define PKMAINWINDOW_H
 
 #include <QApplication>
+#include <QtGui>
 #include <QMainWindow>
 
 class PresentationKit;
@@ -15,10 +16,28 @@ public:
     ~PKMainWindow();
     void SetupUI();
     
-protected:
-    PresentationKit* _presentationKit;
-private:
+public slots:
+    void Slot_About();
 
+protected:
+    void CreateActions();
+    void CreateMenuBar(bool isVisible);
+    void CreateToolBar(bool isVisible);
+    void CreateStatusBar(bool isVisible);
+
+    PresentationKit* _presentationKit;
+
+private:
+    //UI
+    QMenuBar* _menuBar;
+    QToolBar* _toolBar;
+    QMenu* _fileMenu;
+    QMenu* _helpMenu;
+
+    //Actions
+    QAction* _exitAction;
+    QAction* _aboutAction;
+    QAction* _aboutQtAction;
 };
 
 #endif // PKMAINWINDOW_H
