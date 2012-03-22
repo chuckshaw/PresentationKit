@@ -18,5 +18,3 @@ HEADERS  += \
     presentationkit.h \
     pkmainwindow.h
 
-FORMS    += \
-    pkmainwindow.ui
