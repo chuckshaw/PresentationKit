@@ -12,11 +12,15 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
     presentationkit.cpp \
-    pkmainwindow.cpp
+    pkmainwindow.cpp \
+    pkmanager.cpp \
+    pkpluginmanager.cpp
 
 HEADERS  += \
     presentationkit.h \
-    pkmainwindow.h
+    pkmainwindow.h \
+    pkmanager.h \
+    pkpluginmanager.h
 
 RESOURCES += \
     PresentationKit.qrc
