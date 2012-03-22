@@ -70,8 +70,8 @@ void PKMainWindow::SetupUI()
     CreateStatusBar(true);
 
     //Set Default Geometry
-    this->setGeometry(100, 100, 1280, 800);
-
+    //this->setGeometry(100, 100, 1280, 800);
+    this->resize(1200, 800);
     this->setWindowTitle(qApp->applicationName());
 }
 
@@ -122,7 +122,7 @@ void PKMainWindow::CreateStatusBar(bool isVisible)
 {
     if(isVisible)
     {
-        statusBar()->showMessage("Ready");
+        statusBar()->showMessage(tr("Ready"));
     }
 }
 
