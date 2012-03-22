@@ -18,3 +18,6 @@ HEADERS  += \
     presentationkit.h \
     pkmainwindow.h
 
+RESOURCES += \
+    PresentationKit.qrc
+

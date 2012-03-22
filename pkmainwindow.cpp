@@ -77,7 +77,7 @@ void PKMainWindow::SetupUI()
 
 void PKMainWindow::CreateActions()
 {
-    _exitAction = new QAction(tr("Exit"), this);
+    _exitAction = new QAction(QIcon(":/images/Resources/system-log-out.png"), tr("Exit"), this);
     connect(_exitAction, SIGNAL(triggered()), _presentationKit, SLOT(Slot_ExitApplication()));
 
     _aboutAction = new QAction(tr("&About"), this);
@@ -102,7 +102,7 @@ void PKMainWindow::CreateMenuBar(bool isVisible)
 void PKMainWindow::CreateToolBar(bool isVisible)
 {
     _toolBar = this->addToolBar("PKToolBar");
-    _toolBar->setToolButtonStyle(Qt::ToolButtonTextUnderIcon);
+    _toolBar->setToolButtonStyle(Qt::ToolButtonIconOnly);
     _toolBar->setIconSize(QSize(25, 25));
     _toolBar->setAutoFillBackground(true);
 
