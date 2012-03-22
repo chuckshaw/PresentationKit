@@ -1,0 +1,4 @@
+# Ignore other uneeded files.
+*.user
+*.user.*
+.DS_Store
