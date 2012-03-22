@@ -11,8 +11,12 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+    presentationkit.cpp \
+    pkmainwindow.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += \
+    presentationkit.h \
+    pkmainwindow.h
 
-FORMS    += mainwindow.ui
+FORMS    += \
+    pkmainwindow.ui
