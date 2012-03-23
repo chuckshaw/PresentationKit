@@ -8,5 +8,4 @@ PKPluginManager::PKPluginManager(PresentationKit *parent, const char* name) :
 
 PKPluginManager::~PKPluginManager()
 {
-
 }

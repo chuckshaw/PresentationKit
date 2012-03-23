@@ -2,6 +2,8 @@
 #define PRESENTATIONKIT_H
 
 #include "pkmainwindow.h"
+#include "pkpluginmanager.h"
+#include "pkscriptmanager.h"
 
 #include <QObject>
 #include <QMainWindow>
@@ -14,6 +16,8 @@ public:
     ~PresentationKit();
 
     PKMainWindow* GetMainWindow() const { return _PKMainWindow; }
+    PKPluginManager* GetPluginManager() const { return _PKPluginManager; }
+    PKScriptManager* GetScriptManager() const { return _PKScriptManager; }
 
 signals:
     
@@ -23,6 +27,9 @@ public slots:
 private:
     void Ignition();
     PKMainWindow* _PKMainWindow;
+    PKPluginManager* _PKPluginManager;
+    PKScriptManager* _PKScriptManager;
+
     
 };
 

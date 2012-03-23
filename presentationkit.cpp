@@ -18,6 +18,8 @@ PresentationKit::PresentationKit(QObject *parent) :
     QObject(parent)
 {
     _PKMainWindow = NULL;
+    _PKPluginManager = NULL;
+    _PKScriptManager = NULL;
 
     Ignition();
 }
@@ -29,11 +31,27 @@ PresentationKit::~PresentationKit()
         delete _PKMainWindow;
         _PKMainWindow = NULL;
     }
+
+    if(_PKPluginManager)
+    {
+        delete _PKPluginManager;
+        _PKPluginManager = NULL;
+    }
+
+    if(_PKScriptManager)
+    {
+        delete _PKScriptManager;
+        _PKScriptManager = NULL;
+    }
 }
 
 void PresentationKit::Ignition()
 {
+    _PKScriptManager = new PKScriptManager(this);
     _PKMainWindow = new PKMainWindow(this, Qt::Window);
+    _PKPluginManager = new PKPluginManager(this);
+
+    _PKScriptManager->Slot_AddToEngine(this);
 }
 
 void PresentationKit::Slot_ExitApplication()

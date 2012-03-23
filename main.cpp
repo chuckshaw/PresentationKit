@@ -17,7 +17,6 @@ int main(int argc, char *argv[])
     a.setApplicationName(appName);
     a.setApplicationVersion("0.0.1");
 
-
     PresentationKit PKController;
     PKController.setObjectName("PresentationKit");
     PKController.GetMainWindow()->show();

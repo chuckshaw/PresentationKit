@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui script
 
 TARGET = PresentationKit
 TEMPLATE = app
@@ -14,13 +14,15 @@ SOURCES += main.cpp\
     presentationkit.cpp \
     pkmainwindow.cpp \
     pkmanager.cpp \
-    pkpluginmanager.cpp
+    pkpluginmanager.cpp \
+    pkscriptmanager.cpp
 
 HEADERS  += \
     presentationkit.h \
     pkmainwindow.h \
     pkmanager.h \
-    pkpluginmanager.h
+    pkpluginmanager.h \
+    pkscriptmanager.h
 
 RESOURCES += \
     PresentationKit.qrc
