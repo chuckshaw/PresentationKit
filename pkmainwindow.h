@@ -18,6 +18,7 @@ public:
     
 public slots:
     void Slot_About();
+    void Slot_ScriptEditor();
 
 protected:
     void CreateActions();
@@ -31,11 +32,15 @@ private:
     //UI
     QMenuBar* _menuBar;
     QToolBar* _toolBar;
+    QToolBar* _devToolBar;
+
     QMenu* _fileMenu;
+    QMenu* _devMenu;
     QMenu* _helpMenu;
 
     //Actions
     QAction* _exitAction;
+    QAction* _scriptAction;
     QAction* _aboutAction;
     QAction* _aboutQtAction;
 };

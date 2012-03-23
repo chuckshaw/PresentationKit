@@ -5,6 +5,7 @@ PKScriptManager::PKScriptManager(PresentationKit *parent, const char* name) :
     PKManager(parent, name)
 {
     _engine = new QScriptEngine();
+    _scriptEditor = new PKScriptEditor();
 
     this->setObjectName("PKScriptManager");
     this->Slot_AddToEngine(this);
@@ -16,6 +17,12 @@ PKScriptManager::~PKScriptManager()
     {
         delete _engine;
         _engine = NULL;
+    }
+
+    if(_scriptEditor)
+    {
+        delete _scriptEditor;
+        _scriptEditor = NULL;
     }
 }
 

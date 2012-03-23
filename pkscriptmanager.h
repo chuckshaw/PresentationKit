@@ -2,6 +2,7 @@
 #define PKSCRIPTMANAGER_H
 
 #include "pkmanager.h"
+#include "pkscripteditor.h"
 
 #include <QtScript>
 
@@ -14,6 +15,7 @@ public:
     virtual ~PKScriptManager();
     
     QScriptEngine* GetScriptEngine() { return _engine; }
+    PKScriptEditor* GetScriptEditor() { return _scriptEditor; }
 
 signals:
     
@@ -26,6 +28,7 @@ public slots:
 private:
     QScriptEngine* _engine;
     QScriptValue _globalScript;
+    PKScriptEditor* _scriptEditor;
     
 };
 

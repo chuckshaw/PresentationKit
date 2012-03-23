@@ -1,5 +1,15 @@
 <RCC>
     <qresource prefix="/images">
         <file>Resources/system-log-out.png</file>
+        <file>Resources/document-new.png</file>
+        <file>Resources/Document.png</file>
+        <file>Resources/list-add.png</file>
+        <file>Resources/list-remove.png</file>
+        <file>Resources/process-stop.png</file>
+        <file>Resources/process-working.png</file>
+        <file>Resources/software-update-urgent.png</file>
+        <file>Resources/text-x-generic.png</file>
+        <file>Resources/x-office-document.png</file>
+        <file>Resources/light_grey_stitch.png</file>
     </qresource>
 </RCC>
