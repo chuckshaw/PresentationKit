@@ -1,4 +1,3 @@
- 
 <!--AppConfig isFullscreen="true|false" hasCentralWidget="true|false">
     <Geometry x="0" y="0" width="0" height="0"/>
     <MenuBar isVisible="true|false"/>
