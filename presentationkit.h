@@ -4,6 +4,7 @@
 #include "pkmainwindow.h"
 #include "pkpluginmanager.h"
 #include "pkscriptmanager.h"
+#include "pkconfigmanager.h"
 
 #include <QObject>
 #include <QMainWindow>
@@ -18,6 +19,9 @@ public:
     PKMainWindow* GetMainWindow() const { return _PKMainWindow; }
     PKPluginManager* GetPluginManager() const { return _PKPluginManager; }
     PKScriptManager* GetScriptManager() const { return _PKScriptManager; }
+    PKConfigManager* GetConfigManager() const { return _PKConfigManager; }
+    QString GetAppPath() const { return _appPath; }
+
 
 signals:
     
@@ -29,8 +33,9 @@ private:
     PKMainWindow* _PKMainWindow;
     PKPluginManager* _PKPluginManager;
     PKScriptManager* _PKScriptManager;
-
+    PKConfigManager* _PKConfigManager;
     
+    QString _appPath;
 };
 
 #endif // PRESENTATIONKIT_H

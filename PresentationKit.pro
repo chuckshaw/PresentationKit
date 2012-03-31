@@ -16,7 +16,8 @@ SOURCES += main.cpp\
     pkmanager.cpp \
     pkpluginmanager.cpp \
     pkscriptmanager.cpp \
-    pkscripteditor.cpp
+    pkscripteditor.cpp \
+    pkconfigmanager.cpp
 
 HEADERS  += \
     presentationkit.h \
@@ -24,7 +25,8 @@ HEADERS  += \
     pkmanager.h \
     pkpluginmanager.h \
     pkscriptmanager.h \
-    pkscripteditor.h
+    pkscripteditor.h \
+    pkconfigmanager.h
 
 RESOURCES += \
     PresentationKit.qrc

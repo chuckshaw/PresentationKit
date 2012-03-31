@@ -1,5 +1,6 @@
 #include "pkmainwindow.h"
 #include "presentationkit.h"
+#include "pkconfigmanager.h"
 
 PKMainWindow::PKMainWindow(PresentationKit *parent, Qt::WFlags flags) :
     QMainWindow(0, flags)

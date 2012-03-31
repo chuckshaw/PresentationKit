@@ -1,0 +1,14 @@
+ 
+<!--AppConfig isFullscreen="true|false" hasCentralWidget="true|false">
+    <Geometry x="0" y="0" width="0" height="0"/>
+    <MenuBar isVisible="true|false"/>
+    <ToolBar location="top|bottom|left|right" isVisible="true|false"/>
+    <StatusBar isVisible="true|false"/>
+</AppConfig-->
+
+<AppConfig  fullscreen="true" centralPlugin="true">
+    <Geometry x="100" y="100" width="1280" height="750"/>
+    <MenuBar isVisible="true"/>
+    <ToolBar location="top" isVisible="true"/>
+    <StatusBar isVisible="true"/>
+</AppConfig>
